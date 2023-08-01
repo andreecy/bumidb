@@ -25,5 +25,7 @@ fn main() {
     data.insert("name", "agus");
     data.insert("age", "23");
 
-    Record::create("users", data).expect("cannot create record");
+    // Record::create("users", data).expect("cannot create record");
+
+    Record::find("users", "agus").expect("cannot find record");
 }
